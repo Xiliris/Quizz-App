@@ -70,6 +70,10 @@ let clicked = false;
 
 function btnsPressed(e) {
   let answerPressed = e.target.innerText;
+
+  let bugAnswers = ["first", "second", "third", "fourth"];
+  if (!bugAnswers.includes(e.target.id)) return
+
   if (clicked === true) return;
 
   if (answerPressed == rightAnswer) {
